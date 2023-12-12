@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "SELECT",
+"features": [
+{ "type": "Feature", "properties": { "RMC": "105_622", "site": 105, "drive": 622, "sol": 4030, "easting": 8144632.55, "northing": -283134.107, "elev_geoid": -3763.33, "lon": 137.4048775, "lat": -4.77664364, "roll": -8.03, "pitch": 5.28, "yaw": 123.22, "yaw_rad": 2.15056, "tilt": 9.6, "dist_m": 16.4, "dist_total_m": 31384.13, "dist_km": 31.08, "dist_mi": 19.31, "drive_type": "final" }, "geometry": { "type": "Point", "coordinates": [ 137.4048775, -4.77664364, -3763.33 ] } }
+]
+}

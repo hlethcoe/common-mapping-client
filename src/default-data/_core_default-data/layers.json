@@ -86,8 +86,42 @@
                     "openlayers": "trekCustom256Url"
                 }
             }
+        },
+        {
+            "id": "MSL_Traverse_Path_tosol4030_geo",
+            "title": "MSL Traverse - Sol 4030",
+            "type": "data",
+            "handleAs": "vector_geojson",
+            "updateParameters": {
+                "time": false
+            },
+            "url": "default-data/_core_default-data/MSL_traverse.json",
+            "metadata": {
+                "url": "default-data/_core_default-data/MSL_traverse.json",
+                "handleAs": "json"
+            },
+            "thumbnailImage": "img/us_state_outline_topojson.png"
+        },
+        {
+            "id": "MSL_Rover_Localizations_sol4030_geo",
+            "title": "MSL Localizations - Sol 4030",
+            "type": "data",
+            "handleAs": "vector_geojson",
+            "updateParameters": {
+                "time": false
+            },
+            "url": "default-data/_core_default-data/MSL_waypoints.json",
+            "metadata": {
+                "url": "default-data/_core_default-data/MSL_waypoints.json",
+                "handleAs": "json"
+            },
+            "thumbnailImage": "img/us_state_outline_topojson.png"
         }
 
+
+
+
+        
     ]
 }
 
