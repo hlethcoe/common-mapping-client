@@ -1449,6 +1449,8 @@ export default class MapWrapperCesium extends MapWrapper {
         switch (layer.get("handleAs")) {
             case appStrings.LAYER_GIBS_RASTER:
                 return this.createWMTSLayer(layer);
+            case "trek_raster":
+                return this.createWMTSLayer(layer);
             case appStrings.LAYER_WMTS_RASTER:
                 return this.createWMTSLayer(layer);
             case appStrings.LAYER_XYZ_RASTER:
@@ -1853,6 +1855,8 @@ export default class MapWrapperCesium extends MapWrapper {
         switch (layer.get("handleAs")) {
             case appStrings.LAYER_GIBS_RASTER:
                 return this.createGIBSWMTSProvider(layer, options);
+            case "trek_raster":
+                return this.createGenericWMTSProvider(layer, options);
             case appStrings.LAYER_WMTS_RASTER:
                 return this.createGenericWMTSProvider(layer, options);
             case appStrings.LAYER_WMS_RASTER:
@@ -2368,6 +2372,8 @@ export default class MapWrapperCesium extends MapWrapper {
             case appStrings.LAYER_WMS_RASTER:
                 return this.map.imageryLayers;
             case appStrings.LAYER_XYZ_RASTER:
+                return this.map.imageryLayers;
+            case "trek_raster":
                 return this.map.imageryLayers;
             case appStrings.LAYER_VECTOR_GEOJSON:
                 return this.map.dataSources;

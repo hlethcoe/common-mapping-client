@@ -83,6 +83,10 @@ export default class TileHandler {
                 return (options) => {
                     return this._catsInterceptUrl(options);
                 };
+            case "trekCustom256Url":
+                return (options) => {
+                    return this._trekCustom256Url(options); 
+                };
             default:
                 return undefined;
         }
@@ -190,6 +194,27 @@ export default class TileHandler {
         }
         return undefined;
     }
+
+    static _trekCustom256Url(options) {
+        let layer = options.layer;
+        let url = this.mapUtil.buildWmtsTileUrl({
+            layerId: layer.getIn(["mappingOptions", "layer"]),
+            url: options.origUrl,
+            tileMatrixSet: layer.getIn(["mappingOptions", "matrixSet"]),
+            format: layer.getIn(["mappingOptions", "format"]),
+            col: options.tileCoord[1],
+            row: options.tileCoord[2],
+            level:
+                typeof options.tileMatrixIds !== "undefined" &&
+                typeof options.tileMatrixIds[options.tileCoord[0]] !== "undefined"
+                    ? options.tileMatrixIds[options.tileCoord[0]]
+                    : options.tileCoord[0],
+            context: options.context,
+        });
+        url = url.replace("{Style}", "default");
+        return url;
+    }
+
 
     /**
      * constuct a wmts kvp format url with an additional time parameter

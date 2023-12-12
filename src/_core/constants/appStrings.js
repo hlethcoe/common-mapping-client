@@ -142,18 +142,13 @@ export const PROJECTIONS = {
         ]
     },
     latlon: {
-        code: "EPSG:4326",
-        proj4Def: "+proj=longlat +datum=WGS84 +no_defs",
+        code: "EPSG:104905",
+        proj4Def: "+proj=longlat +a=3396190 +rf=169.894447223612 +no_defs +type=crs",
         extent: [-180, -90, 180, 90],
         aliases: [
+            "marslatlon",
             "latlon",
-            "CRS:84",
-            "urn:ogc:def:crs:EPSG::4326",
-            "urn:ogc:def:crs:EPSG:6.6:4326",
-            "urn:ogc:def:crs:OGC:1.3:CRS84",
-            "urn:ogc:def:crs:OGC:2:84",
-            "http://www.opengis.net/gml/srs/epsg.xml#4326",
-            "urn:x-ogc:def:crs:EPSG:4326"
+            "urn:ogc:def:crs:EPSG::104905"
         ]
     }
 };

@@ -104,7 +104,7 @@ export class MapControlsContainer extends Component {
                 onMouseLeave={() => this.onMapControlsMouseLeave()}
                 onMouseEnter={() => this.onMapControlsMouseEnter()}
             >
-                <Paper elevation={2} className={styles.buttonGroup}>
+                <Paper elevation={2} className={styles.hidden}>
                     <EnhancedTooltip
                         title={this.props.in3DMode ? "Switch to 2D map" : "Switch to 3D map"}
                         placement="right"

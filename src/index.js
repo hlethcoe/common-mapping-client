@@ -37,6 +37,7 @@ require("_core/styles/resources/img/layer_thumbnails/ESRI_World_Imagery.jpeg");
 require("_core/styles/resources/img/layer_thumbnails/BlueMarble_ShadedRelief_Bathymetry.jpeg");
 require("_core/styles/resources/img/layer_thumbnails/OSM_Land_Water_Map.png");
 require("_core/styles/resources/img/layer_thumbnails/ASTER_GDEM_Color_Shaded_Relief.jpeg");
+require("_core/styles/resources/img/layer_thumbnails/Mars_Viking_MDIM21_ClrMosaic_global_232m.png");
 
 const store = configureStore();
 
