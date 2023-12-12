@@ -59,6 +59,7 @@
             "type": "data",
             "thumbnailImage": "img/ESRI_World_Imagery.jpeg",
             "handleAs": "GIBS_raster",
+            "isDefault": true,
             "updateParameters": {
                 "time": false
             },
@@ -90,8 +91,9 @@
         {
             "id": "MSL_Traverse_Path_tosol4030_geo",
             "title": "MSL Traverse - Sol 4030",
-            "type": "data",
+            "type": "reference",
             "handleAs": "vector_geojson",
+            "isDefault": true,
             "updateParameters": {
                 "time": false
             },
@@ -105,8 +107,9 @@
         {
             "id": "MSL_Rover_Localizations_sol4030_geo",
             "title": "MSL Localizations - Sol 4030",
-            "type": "data",
+            "type": "reference",
             "handleAs": "vector_geojson",
+            "isDefault": true,
             "updateParameters": {
                 "time": false
             },

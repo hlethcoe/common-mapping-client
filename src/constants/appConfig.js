@@ -20,6 +20,7 @@ const APP_CONFIG = Immutable.fromJS({
     APP_TITLE: "NASA Jet Propulsion Laboratory",
     APP_SUBTITLE: "Mars Looker-Atter Thing",
     APP_VERSION: "1.0",
+    DEFAULT_BBOX_EXTENT : [137.257, -4.8, 137.629, -4.7],
     URLS : {
         layerConfig: [
             {
